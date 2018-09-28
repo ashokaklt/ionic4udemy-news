@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadlinesPage implements OnInit {
 
+    categories = ['India', 'World', 'Business', 'Technology', 'Entertainment', 'Sports', 'Science'];
+
   constructor() { }
 
   ngOnInit() {
