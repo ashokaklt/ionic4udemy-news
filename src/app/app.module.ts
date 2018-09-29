@@ -11,11 +11,12 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ComponentsModule} from './components/components.module';
 import {PipesModule} from './pipes/pipes.module';
+import {IonicStorageModule} from '@ionic/storage';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, ComponentsModule, PipesModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, ComponentsModule, PipesModule, IonicStorageModule.forRoot()],
   providers: [
     StatusBar,
     SplashScreen,
