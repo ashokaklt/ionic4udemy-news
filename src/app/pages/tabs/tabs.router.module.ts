@@ -9,6 +9,7 @@ import {SourcesPage} from '../sources/sources.page';
 import {FavoritesPage} from '../favorites/favorites.page';
 
 import {SettingsPage} from '../settings/settings.page';
+import {SourcePage} from '../source/source.page';
 
 const routes: Routes = [
   {
@@ -34,7 +35,12 @@ const routes: Routes = [
         path: 'sources',
         outlet: 'sources',
         component: SourcesPage
-      }
+      },
+        {
+            path: 'sources/:id',
+            outlet: 'sources',
+            component: SourcePage
+        }
         ,
         {
             path: 'favorites',

@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>headlines</ion-title>
+    <ion-title>Headlines</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,11 +8,19 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-chip *ngFor="let category of categories">
-          <ion-label>{{category}}</ion-label>
-        </ion-chip>
+        <ion-slides>
+          <ion-slide>
+            <ion-chip color="primary" *ngFor="let category of categories" (click)="onGetCategoryData(category)">
+              <ion-label>{{category}}</ion-label>
+            </ion-chip>
+          </ion-slide>
+
+        </ion-slides>
+
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <app-articles [news]="news"></app-articles>
 
 </ion-content>

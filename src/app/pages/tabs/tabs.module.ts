@@ -13,6 +13,7 @@ import {HeadlinesPageModule} from '../headlines/headlines.module';
 import {SourcesPageModule} from '../sources/sources.module';
 import {FavoritesPageModule} from '../favorites/favorites.module';
 import {SettingsPageModule} from '../settings/settings.module';
+import {SourcePageModule} from '../source/source.module';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import {SettingsPageModule} from '../settings/settings.module';
     CommonModule,
     FormsModule,
     TabsPageRoutingModule,
-    TopNewsPageModule, HeadlinesPageModule, SourcesPageModule, FavoritesPageModule, SettingsPageModule
+    TopNewsPageModule, HeadlinesPageModule, SourcesPageModule, FavoritesPageModule, SettingsPageModule, SourcePageModule
   ],
   declarations: [TabsPage]
 })

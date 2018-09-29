@@ -9,6 +9,7 @@ export class ArticlesComponent implements OnInit {
 
   @Input()
   news;
+  fakeArticles = new Array(20);
 
   constructor() { }
 
